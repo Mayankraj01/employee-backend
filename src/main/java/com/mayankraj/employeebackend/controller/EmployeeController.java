@@ -8,7 +8,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000") 
+//@CrossOrigin(origins = "http://localhost:3000") 
+    @CrossOrigin(origins = {
+  "http://localhost:3000",
+  "https://employee-frontend-jurp.onrender.com"
+})
+
 @RestController
 @RequestMapping("/employees")
 //@CrossOrigin(origins = "*")
